@@ -76,20 +76,20 @@ function onResultClick() {
   if (numbOne !== '' && numbTwo !== '' && sign !== '') {
     switch (sign) {
       case '+':
-        resultWindow.value = (+numbOne + +numbTwo).toFixed(9);
+        resultWindow.value = +(+numbOne + +numbTwo).toFixed(9);
         break;
       case '-':
-        resultWindow.value = (+numbOne - +numbTwo).toFixed(9);
+        resultWindow.value = +(+numbOne - +numbTwo).toFixed(9);
         break;
       case 'x':
-        resultWindow.value = (+numbOne * +numbTwo).toFixed(9);
+        resultWindow.value = +(+numbOne * +numbTwo).toFixed(9);
         break;
       case '/':
         if (numbTwo == '0') {
           enterWindow.value = '';
           return;
         }
-        resultWindow.value = (+numbOne / +numbTwo).toFixed(9);
+        resultWindow.value = +(+numbOne / +numbTwo).toFixed(9);
 
         break;
     }
